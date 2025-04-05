@@ -1,11 +1,247 @@
-h1, h2, body, footer, section {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    text-align: center;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #343a40;
+  padding-bottom: 100px;
 }
 
-footer{
-    text-align: justify;
+header, footer {
+  background-color: #0a58ca;
+  color: black;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 5px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+  border-top: 5px solid #0a58ca;
+  border-bottom: none;
+}
+
+h2, h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+h2::first-letter {
+  color: #0d6efd;
+  font-size: 1.5em;
+}
+
+.card {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #f1f5ff;
+}
+
+img {
+  border-radius: 10px;
+  border: 3px solid #dee2e6;
+  transition: 0.3s ease-in-out;
+}
+
+img:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #084298;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #0d6efd;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.container .card:nth-child(odd) {
+  background-color: #fefefe;
+}
+
+section.card:hover h2::after {
+  content: " ✨";
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background: url('sprite.png') no-repeat;
+  display: inline-block;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(to right, #0d6efd, #0a58ca);
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideDown 0.6s ease-out;
+  border-radius: 0 0 10px 10px;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 10px 18px;
+  margin: 0 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: #212529;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+ol {
+  counter-reset: section;
+}
+
+ol li::before {
+  counter-increment: section;
+  content: "Bagian " counter(section) ": ";
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+h1 {
+  color: white !important;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  nav a {
+    flex: 1 1 45%;
+    margin: 5px 0;
+    font-size: 14px;
+  }
 }
