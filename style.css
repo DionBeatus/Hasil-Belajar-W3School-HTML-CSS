@@ -1,3 +1,4 @@
+/* * memanggil semua */
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@ footer {
 h2, h3 {
   font-weight: 700;
   margin-bottom: 10px;
-  color: #212529;
+  color: #333333;
 }
 
 h2::first-letter {
@@ -42,7 +43,7 @@ h2::first-letter {
   margin: 20px auto;
   padding: 30px;
   max-width: 900px;
-  border-radius: calc(100% - 500px);
+  border-radius: 12px; 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
@@ -55,7 +56,7 @@ h2::first-letter {
 img {
   border-radius: 10px;
   border: 3px solid #dee2e6;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out; 
 }
 
 img:hover {
@@ -95,7 +96,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: #f1f5ff; 
 }
 
 .container {
@@ -109,11 +110,11 @@ tr:nth-child(even) {
 }
 
 .container .card:nth-child(odd) {
-  background-color: #fefefe;
+  background-color: #d51515;
 }
 
 section.card:hover h2::after {
-  content: " ✨";
+  content: "\1F680";
 }
 
 input[type="text"], textarea {
@@ -127,7 +128,6 @@ input[type="text"], textarea {
 .icon {
   width: 32px;
   height: 32px;
-  background: url('sprite.png') no-repeat;
   display: inline-block;
 }
 
@@ -139,7 +139,7 @@ nav {
   padding: 15px 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: fadeSlideDown 0.6s ease-out;
+  animation: fadeSlideDown 0.4s ease-out; 
   border-radius: 0 0 10px 10px;
 }
 
@@ -227,7 +227,7 @@ ol li::before {
 }
 
 h1 {
-  color: white !important;
+  color: white !important; 
 }
 
 @media screen and (max-width: 600px) {
@@ -242,6 +242,6 @@ h1 {
   nav a {
     flex: 1 1 45%;
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 16px; 
   }
 }
