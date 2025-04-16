@@ -109,8 +109,8 @@ tr:nth-child(even) {
   text-align: center;
 }
 
-.container .card:nth-child(odd) {
-  background-color: #d51515;
+.card:nth-child(odd) {
+  background-color: #77aaca;
 }
 
 section.card:hover h2::after {
