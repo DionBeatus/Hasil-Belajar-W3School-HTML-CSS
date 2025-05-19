@@ -13,13 +13,14 @@ body {
   padding-bottom: 100px;
 }
 
-header, footer {
+header,
+footer {
   background-color: #0a58ca;
   color: black;
   padding: 30px 20px;
   text-align: center;
   border-bottom: 5px solid white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -27,7 +28,8 @@ footer {
   border-bottom: none;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 700;
   margin-bottom: 10px;
   color: #333333;
@@ -43,7 +45,7 @@ h2::first-letter {
   margin: 20px auto;
   padding: 30px;
   max-width: 900px;
-  border-radius: 12px; 
+  border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
@@ -56,7 +58,7 @@ h2::first-letter {
 img {
   border-radius: 10px;
   border: 3px solid #dee2e6;
-  transition: 0.5s ease-in-out; 
+  transition: 0.5s ease-in-out;
 }
 
 img:hover {
@@ -84,7 +86,8 @@ table {
   overflow: hidden;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #dee2e6;
   padding: 12px;
   text-align: center;
@@ -96,7 +99,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #f1f5ff; 
+  background-color: #f1f5ff;
 }
 
 .container {
@@ -117,7 +120,8 @@ section.card:hover h2::after {
   content: "\1F680";
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -139,7 +143,7 @@ nav {
   padding: 15px 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: fadeSlideDown 0.4s ease-out; 
+  animation: fadeSlideDown 0.4s ease-out;
   border-radius: 0 0 10px 10px;
 }
 
@@ -166,6 +170,7 @@ nav a:hover {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -186,7 +191,7 @@ html {
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -227,7 +232,7 @@ ol li::before {
 }
 
 h1 {
-  color: white !important; 
+  color: white !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -242,6 +247,151 @@ h1 {
   nav a {
     flex: 1 1 45%;
     margin: 5px 0;
-    font-size: 16px; 
+    font-size: 16px;
   }
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #333;
+  box-shadow: none;
+}
+
+body.dark-mode .card {
+  background-color: #1f1f1f;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  color: #ddd;
+}
+
+body.dark-mode nav {
+  background: linear-gradient(to right, #222, #555);
+}
+
+body.dark-mode nav a {
+  color: #ccc;
+}
+
+body.dark-mode nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  color: #fff;
+}
+
+.accordion {
+  background-color: #0d6efd;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: 600;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion.active,
+.accordion:hover {
+  background-color: #084298;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #f1f5ff;
+  border-radius: 0 0 8px 8px;
+  padding: 0 15px;
+}
+
+body.dark-mode .accordion-content {
+  background-color: #333;
+  color: #ddd;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.accordion.active,
+.accordion:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.panel {
+  padding: 0 15px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border-left: 3px solid #0d6efd;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 10px;
+}
+
+#tentang {
+  background-color: #0d6efd;
+  /* warna biru cerah */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tentang h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#tentang p {
+  font-size: 1rem;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+#tentang a {
+  color: #ffe066;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#tentang a:hover {
+  color: #ffc107;
+  /* warna kuning saat hover */
+  text-decoration: underline;
+}
+
+#tentang .icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('https://cdn-icons-png.flaticon.com/512/1828/1828817.png') no-repeat center center;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 6px;
 }

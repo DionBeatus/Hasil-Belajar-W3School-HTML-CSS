@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hasil Belajar W3School - HTML - CSS</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -12,13 +13,12 @@
     <a href="#header">Beranda</a>
     <a href="#html-table">Tabel</a>
     <a href="#pendapat">Pendapat</a>
-    
+
     <div class="dropdown">
       <a href="#">Menu Lain</a>
       <div class="dropdown-content">
-        <a href="#responsive">Responsive</a>
-        <a href="#computercode">Computer Code</a>
         <a href="#sekian-terimakasih">Penutup</a>
+        <a href="#tentang">Tentang Saya</a>
       </div>
     </div>
   </nav>
@@ -32,11 +32,21 @@
   <section id="html-introduction" class="card">
     <h2>Pengenalan HTML</h2>
     <p>HTML (HyperText Markup Language) adalah bahasa standar untuk membuat halaman web.</p>
+    <button class="accordion">Selengkapnya tentang HTML</button>
+    <div class="panel">
+      <p>HTML memungkinkan pembuatan halaman web dengan struktur dan konten yang terorganisir menggunakan elemen-elemen
+        seperti paragraf, tautan, gambar, dan lain-lain.</p>
+    </div>
   </section>
 
   <section id="html-editor" class="card">
     <h2>HTML Editor</h2>
     <p>Dokumen HTML dapat dibuat dengan editor teks sederhana atau editor HTML yang lebih canggih.</p>
+    <button class="accordion">Kenali Editor HTML</button>
+    <div class="panel">
+      <p>Editor sederhana seperti Notepad bisa dipakai, tapi editor khusus seperti Visual Studio Code menawarkan fitur
+        yang memudahkan coding.</p>
+    </div>
   </section>
 
   <section id="html-basic" class="card">
@@ -44,95 +54,7 @@
     <p>Struktur dasar HTML terdiri dari elemen-elemen utama seperti doctype, html, head, dan body.</p>
   </section>
 
-  <section id="html-elements" class="card">
-    <h2>HTML Elemen</h2>
-    <p>Elemen HTML adalah komponen penyusun halaman web.</p>
-  </section>
-
-  <section id="html-attributes" class="card">
-    <h2>HTML Atribut</h2>
-    <p>Atribut digunakan untuk memberikan informasi tambahan pada elemen HTML.</p>
-  </section>
-
-  <section id="html-classes" class="card">
-    <h2>HTML Classes</h2>
-    <p>Class digunakan untuk memberi nama pada elemen dan dapat digunakan dalam CSS dan JavaScript.</p>
-  </section>
-
-  <section id="html-id" class="card">
-    <h2>HTML ID</h2>
-    <p>ID digunakan untuk memberikan identitas unik pada elemen.</p>
-  </section>
-
-  <section id="html-iframes" class="card">
-    <h2>HTML Iframes</h2>
-    <p>Iframes digunakan untuk menyematkan halaman web di dalam halaman lain.</p>
-  </section>
-
-  <section id="html-javascript" class="card">
-    <h2>HTML JavaScript</h2>
-    <p>JavaScript dapat digunakan dalam HTML untuk menambahkan interaktivitas.</p>
-  </section>
-
-  <section id="file-path" class="card">
-    <h2>File Path</h2>
-    <p>File path digunakan untuk menentukan lokasi file dalam HTML.</p>
-  </section>
-
-  <section id="head" class="card">
-    <h2>Head</h2>
-    <p>Bagian head berisi metadata seperti title, meta tags, dan link ke CSS.</p>
-  </section>
-
-  <section id="layout" class="card">
-    <h2>Layout</h2>
-    <p>HTML dan CSS digunakan untuk mengatur tata letak halaman web.</p>
-  </section>
-
-  <section id="responsive" class="card">
-    <h2>Responsive</h2>
-    <p>Desain responsif membuat halaman web tampil baik di berbagai perangkat.</p>
-  </section>
-
-  <section id="computercode" class="card">
-    <h2>Computer Code</h2>
-    <p>Tag seperti &lt;code&gt;, &lt;pre&gt;, dan &lt;samp&gt; digunakan untuk menampilkan kode komputer.</p>
-  </section>
-
-  <section id="semantics" class="card">
-    <h2>Semantics</h2>
-    <p>HTML5 menyediakan elemen semantik seperti &lt;article&gt;, &lt;section&gt;, &lt;nav&gt; untuk struktur yang lebih bermakna.</p>
-  </section>
-
-  <section id="style-guide" class="card">
-    <h2>Style Guide</h2>
-    <p>Pedoman untuk menulis HTML yang bersih dan rapi.</p>
-  </section>
-
-  <section id="entities" class="card">
-    <h2>Entities</h2>
-    <p>HTML entities digunakan untuk menampilkan karakter khusus seperti &amp;lt; dan &amp;gt;.</p>
-  </section>
-
-  <section id="symbol" class="card">
-    <h2>Symbol</h2>
-    <p>Simbol dalam HTML seperti &amp;copy;, &amp;trade;, &amp;hearts;.</p>
-  </section>
-
-  <section id="emojis" class="card">
-    <h2>Emojis</h2>
-    <p>HTML mendukung berbagai emoji menggunakan Unicode seperti 😀.</p>
-  </section>
-
-  <section id="charset" class="card">
-    <h2>Charset</h2>
-    <p>Meta charset menentukan jenis karakter yang digunakan dalam halaman web, seperti UTF-8.</p>
-  </section>
-
-  <section id="url-encode" class="card">
-    <h2>URL Encode</h2>
-    <p>URL encoding menggantikan karakter khusus dalam URL dengan kode yang sesuai.</p>
-  </section>
+  <!-- Tambahkan accordion jika mau pada bagian lain sesuai kebutuhan -->
 
   <section id="html-table" class="card">
     <h2>HTML Table</h2>
@@ -146,9 +68,21 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>1</td><td>Dion Beatus</td><td>Nonton Drakor</td></tr>
-        <tr><td>2</td><td>Michael</td><td>Main Game</td></tr>
-        <tr><td>3</td><td>Jiwon</td><td>Akting</td></tr>
+        <tr>
+          <td>1</td>
+          <td>Dion Beatus</td>
+          <td>Nonton Drakor</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Michael</td>
+          <td>Main Game</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Jiwon</td>
+          <td>Akting</td>
+        </tr>
       </tbody>
     </table>
   </section>
@@ -175,11 +109,12 @@
       <p>Kamu bisa menuliskan pendapat atau saran terkait halaman ini di bawah ini:</p>
       <textarea id="komentar" name="komentar" rows="5" placeholder="Tulis pendapatmu di sini..."></textarea>
       <br><br>
-      <input type="submit" value="Kirim" style="padding: 10px 20px; background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      <input type="submit" value="Kirim"
+        style="padding: 10px 20px; background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;">
     </form>
   </section>
 
-  <footer class="card center">
+  <footer id="tentang">
     <h3>Tentang Saya</h3>
     <p>Nama: Dion Beatus</p>
     <p>NIM: 24200022</p>
@@ -189,9 +124,102 @@
     </p>
   </footer>
 
-</body>
-</html>
+  <script>
+    // Accordion functionality
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(acc => {
+      acc.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
 
-<script>
-  
-</script>
+    // Tombol kembali ke atas
+    const backToTopBtn = document.createElement("button");
+    backToTopBtn.textContent = "⬆️ Top";
+    backToTopBtn.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+  `;
+    document.body.appendChild(backToTopBtn);
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+
+    backToTopBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // Tampilkan alert saat form disubmit
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Terima kasih atas pendapatmu 😊");
+      form.reset();
+    });
+
+    // Tombol ganti background
+    const bgButton = document.createElement("button");
+    bgButton.textContent = "🎨 Ganti Background";
+    bgButton.style.position = "fixed";
+    bgButton.style.bottom = "80px";
+    bgButton.style.right = "20px";
+    bgButton.style.padding = "10px";
+    bgButton.style.borderRadius = "10px";
+    bgButton.style.backgroundColor = "#ffc107";
+    bgButton.style.color = "#212529";
+    bgButton.style.border = "none";
+    bgButton.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
+    bgButton.style.cursor = "pointer";
+    bgButton.style.zIndex = "1000";
+
+    bgButton.addEventListener("click", function () {
+      document.body.style.background = `hsl(${Math.random() * 360}, 70%, 90%)`;
+    });
+
+    document.body.appendChild(bgButton);
+
+    // Hover efek pada header
+    const header = document.querySelector("header h1");
+    header.addEventListener("mouseover", () => {
+      header.style.color = "#0d6efd";
+      header.style.transition = "color 0.5s";
+    });
+    header.addEventListener("mouseout", () => {
+      header.style.color = "";
+    });
+
+    // Dropdown dinamis
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownContent = document.querySelector(".dropdown-content");
+
+    dropdown.addEventListener("mouseover", () => {
+      dropdownContent.style.display = "block";
+    });
+    dropdown.addEventListener("mouseout", () => {
+      dropdownContent.style.display = "none";
+    });
+  </script>
+
+</body>
+
+</html>
