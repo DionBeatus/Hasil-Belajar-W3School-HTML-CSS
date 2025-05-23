@@ -54,8 +54,6 @@
     <p>Struktur dasar HTML terdiri dari elemen-elemen utama seperti doctype, html, head, dan body.</p>
   </section>
 
-  <!-- Tambahkan accordion jika mau pada bagian lain sesuai kebutuhan -->
-
   <section id="html-table" class="card">
     <h2>HTML Table</h2>
     <p>HTML Table digunakan untuk menyusun data dalam bentuk baris dan kolom.</p>
@@ -123,9 +121,10 @@
       <span class="icon"></span> &copy; 2025 Dion Beatus
     </p>
   </footer>
+</body>
+</html>
 
-  <script>
-    // Accordion functionality
+<script>
     const accordions = document.querySelectorAll(".accordion");
     accordions.forEach(acc => {
       acc.addEventListener("click", function () {
@@ -139,7 +138,6 @@
       });
     });
 
-    // Tombol kembali ke atas
     const backToTopBtn = document.createElement("button");
     backToTopBtn.textContent = "⬆️ Top";
     backToTopBtn.style.cssText = `
@@ -169,7 +167,6 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    // Tampilkan alert saat form disubmit
     const form = document.querySelector("form");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -177,7 +174,6 @@
       form.reset();
     });
 
-    // Tombol ganti background
     const bgButton = document.createElement("button");
     bgButton.textContent = "🎨 Ganti Background";
     bgButton.style.position = "fixed";
@@ -198,7 +194,6 @@
 
     document.body.appendChild(bgButton);
 
-    // Hover efek pada header
     const header = document.querySelector("header h1");
     header.addEventListener("mouseover", () => {
       header.style.color = "#0d6efd";
@@ -208,7 +203,6 @@
       header.style.color = "";
     });
 
-    // Dropdown dinamis
     const dropdown = document.querySelector(".dropdown");
     const dropdownContent = document.querySelector(".dropdown-content");
 
@@ -218,8 +212,4 @@
     dropdown.addEventListener("mouseout", () => {
       dropdownContent.style.display = "none";
     });
-  </script>
-
-</body>
-
-</html>
+</script>

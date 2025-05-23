@@ -1,4 +1,3 @@
-/* * memanggil semua */
 * {
   margin: 0;
   padding: 0;
@@ -349,7 +348,6 @@ body.dark-mode .accordion-content {
 
 #tentang {
   background-color: #0d6efd;
-  /* warna biru cerah */
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -382,7 +380,6 @@ body.dark-mode .accordion-content {
 
 #tentang a:hover {
   color: #ffc107;
-  /* warna kuning saat hover */
   text-decoration: underline;
 }
 
